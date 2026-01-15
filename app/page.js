@@ -19,8 +19,9 @@ export default function Home() {
       <CategoryGrid />
       <ProductGrid/>
       <Hero />
-      <CollectionsSection />
+     
       <GoldJewellerySection />
+       <CollectionsSection />
       <ShopByGender />
       <PromiseSlider />
       <InstagramGrid />

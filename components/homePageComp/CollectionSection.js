@@ -48,7 +48,7 @@ export default function CollectionsSection() {
       </div>
 
       {/* CTA BUTTON */}
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center ">
         <button className="px-10 py-4 rounded-xl bg-gray-200 text-gray-700 font-medium text-sm tracking-wide hover:bg-gray-300 transition">
           Browse all Collections
         </button>

@@ -84,7 +84,7 @@ export default function Hero() {
 
   return (
     <div>
-      <div className="flex gap-2">
+      {/* <div className="flex gap-2">
         <LuxuryCategoryCard
         title="MODA BEADS"
         tagline="PERFECTION IS A SPHERE"
@@ -103,7 +103,7 @@ export default function Hero() {
           "/images/mangalsutras_Slider.png"
       
       />
-      </div>
+      </div> */}
     <div className="relative w-full h-[260px] sm:h-[360px] md:h-[450px] overflow-hidden">
       
       

@@ -90,7 +90,7 @@ export default function Navbar() {
         {/* Left: Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image src="/images/shreeji_logo.png" width={40} height={40} alt="logo" />
-          <Image src="/images/shreeji_text.png" width={60} height={40} alt="logo" />
+          <Image src="/images/Shreeji_text.png" width={60} height={40} alt="logo" />
         </Link>
 
         {/* Desktop Search */}

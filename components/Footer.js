@@ -29,7 +29,7 @@ const Footer = () => {
 
       {/* ABOUT US */}
       <FooterCol title="About Us">
-        <FooterLink label="Who we are?" />
+        <FooterLink label="Who we are?" url="/WhoWeAre" />
         <FooterLink label="Our Blogs" />
         <FooterLink label="Design Philosophy" />
       </FooterCol>
@@ -180,10 +180,10 @@ const FooterCol = ({ title, children }) => (
   </div>
 );
 
-const FooterLink = ({ label, icon }) => (
+const FooterLink = ({ label,url, icon }) => (
   <li>
     <a
-      href="#"
+      href={url}
       className="flex items-center gap-2 hover:text-white transition"
     >
       {icon || <ChevronRight className="w-4 h-4" />}

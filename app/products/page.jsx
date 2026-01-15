@@ -1,6 +1,6 @@
 // // app/products/[slug]/page.jsx
 // async function getProduct(slug) {
-//   const res = await fetch(`http://localhost:5000/product/slug/${slug}`, {
+//   const res = await fetch(`https://two026-e-commerce-jewellery-backend.onrender.com/product/slug/${slug}`, {
 //     cache: "no-store",
 //   });
 //   return res.json();
@@ -12,7 +12,7 @@
 //   return (
 //     <div className="grid md:grid-cols-2 gap-10">
 //       <img
-//         src={`http://localhost:5000/${product.images[0]}`}
+//         src={`https://two026-e-commerce-jewellery-backend.onrender.com/${product.images[0]}`}
 //         className="rounded-xl"
 //       />
 

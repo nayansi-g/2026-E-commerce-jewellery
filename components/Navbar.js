@@ -80,6 +80,13 @@ const categories = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(()=>{
+    if (typeof localStorage !== "undefined"){
+      setIsLoggedIn(()=>localStorage.getItem("token")?true:false)
+    }
+  },[])
 
   return (
     <header className="w-full border-b bg-white">
@@ -113,13 +120,17 @@ export default function Navbar() {
           </div>
 
           {/* Login */}
-          <div className="hidden text-gray-700 md:flex text-sm">
-            <Link href="/login" className="text-red-600 hover:text-red-700">
+          {!isLoggedIn ?<div className="hidden text-gray-700 md:flex text-sm">
+            <Link href="/login" className="text-red-600 cursor-pointer hover:text-red-700">
               Login
             </Link>
             <span className="mx-1">/</span>
-            <Link href="/signup">Signup</Link>
-          </div>
+            <Link className="cursor-pointer" href="/register">Signup</Link>
+          </div>:<div className="hidden text-gray-700 md:flex text-sm">
+            <button onClick={()=>setIsLoggedIn(false)} className="text-red-600 cursor-pointer hover:text-red-700">
+              Logout
+            </button>
+          </div>}
 
           {/* Icons */}
           <Heart  className="text-gray-700"/>
